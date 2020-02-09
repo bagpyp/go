@@ -34,3 +34,32 @@ func main() {
 "0 sheep, 0 fish, 1 sheep, 1 fish, 2 sheep..."
 
 Concurrency!
+
+
+## firstGoes
+
+My favorite thing in this little playground here is the one about pointers and de-referencing
+
+```go
+
+func main() {
+	/*--------
+	 POINTERS
+	---------*/
+
+	//initiates an integer, i=7
+	//passes the memory address of i's value to inc
+	i := 7
+	inc(&i)
+	fmt.Println(i)
+}
+
+
+
+
+//increment function that accepts a pointer to an int
+func inc(x *int) {
+	//de-references the pointer
+	*x++
+}
+```
